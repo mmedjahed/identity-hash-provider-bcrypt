@@ -26,24 +26,24 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.carbon.identity.hash.provider.pbkdf2</groupId>
-    <artifactId>identity-hash-provider-pbkdf2</artifactId>
+        <groupId>org.wso2.carbon.identity.hash.provider.bcrypt</groupId>
+    <artifactId>identity-hash-provider-bcrypt</artifactId>
     <version>0.1.8-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>WSO2 Carbon PBKDF2 module</name>
+    <name>WSO2 Carbon BCRYPT module</name>
     <url>http://wso2.org</url>
 
     <scm>
-        <connection>scm:git:https://github.com/wso2-extensions/identity-hash-provider-pbkdf2.git</connection>
-        <developerConnection>scm:git:https://github.com/wso2-extensions/identity-hash-provider-pbkdf2.git</developerConnection>
-        <url>https://github.com/wso2-extensions/identity-hash-provider-pbkdf2.git</url>
+        <connection>scm:git:https://github.com/wso2-extensions/identity-hash-provider-bcrypt.git</connection>
+        <developerConnection>scm:git:https://github.com/wso2-extensions/identity-hash-provider-bcrypt.git</developerConnection>
+        <url>https://github.com/wso2-extensions/identity-hash-provider-bcrypt.git</url>
         <tag>HEAD</tag>
     </scm>
 
     <modules>
-        <module>components/org.wso2.carbon.identity.hash.provider.pbkdf2</module>
-        <module>features/org.wso2.carbon.identity.hash.provider.pbkdf2.server.feature</module>
-        <module>utility/pbkdf2-hash-generator</module>
+        <module>components/org.wso2.carbon.identity.hash.provider.bcrypt</module>
+        <module>features/org.wso2.carbon.identity.hash.provider.bcrypt.server.feature</module>
+        <module>utility/bcrypt-hash-generator</module>
     </modules>
 
     <dependencyManagement>
@@ -80,13 +80,13 @@
                 <version>${commons.logging.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.carbon.identity.hash.provider.pbkdf2</groupId>
-                <artifactId>org.wso2.carbon.identity.hash.provider.pbkdf2</artifactId>
+                <groupId>org.wso2.carbon.identity.hash.provider.bcrypt</groupId>
+                <artifactId>org.wso2.carbon.identity.hash.provider.bcrypt</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.carbon.identity.hash.provider.pbkdf2</groupId>
-                <artifactId>org.wso2.carbon.identity.hash.provider.pbkdf2.server.feature</artifactId>
+                <groupId>org.wso2.carbon.identity.hash.provider.bcrypt</groupId>
+                <artifactId>org.wso2.carbon.identity.hash.provider.bcrypt.server.feature</artifactId>
                 <version>${project.version}</version>
                 <type>zip</type>
             </dependency>
@@ -179,6 +179,7 @@
                         </execution>
                     </executions>
                 </plugin>
+                <!--
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
@@ -205,6 +206,7 @@
                         </execution>
                     </executions>
                 </plugin>
+                -->
             </plugins>
         </pluginManagement>
         <plugins>
@@ -251,9 +253,10 @@
         <osgi.service.component.imp.pkg.version.range>[1.2,2)</osgi.service.component.imp.pkg.version.range>
 
         <org.apache.felix.scr.ds-annotations.version>1.2.10</org.apache.felix.scr.ds-annotations.version>
-        <carbon.kernel.version>4.6.3-m4</carbon.kernel.version>
-        <carbon.kernel.feature.version>4.6.3</carbon.kernel.feature.version>
+        <carbon.kernel.version>4.9.26</carbon.kernel.version>
+        <carbon.kernel.feature.version>4.9.26</carbon.kernel.feature.version>
         <org.eclipse.osgi.services.version>3.3.100.v20130513-1956</org.eclipse.osgi.services.version>
+         <!--3.5.100.v20160504-1419-->
         <org.eclipse.osgi.version>3.9.1.v20130814-1242</org.eclipse.osgi.version>
         <pax-logging-api.version>1.11.0</pax-logging-api.version>
         <carbon.kernel.package.import.version.range>[4.6.2, 5.0.0)</carbon.kernel.package.import.version.range>

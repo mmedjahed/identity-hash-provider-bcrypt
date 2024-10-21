@@ -1,0 +1,265 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] WSO2 Carbon BCRYPT module                                          [pom]
+[INFO] WSO2 Carbon - BCRYPT                                            [bundle]
+[INFO] WSO2 Carbon - BCRYPT Feature                                       [pom]
+[INFO] bcrypt-hash-generator                                              [jar]
+[INFO] 
+[INFO] --< org.wso2.carbon.identity.hash.provider.bcrypt:identity-hash-provider-bcrypt >--
+[INFO] Building WSO2 Carbon BCRYPT module 0.1.8-SNAPSHOT                  [1/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:tree (default-cli) @ identity-hash-provider-bcrypt ---
+[INFO] org.wso2.carbon.identity.hash.provider.bcrypt:identity-hash-provider-bcrypt:pom:0.1.8-SNAPSHOT
+[INFO] 
+[INFO] --< org.wso2.carbon.identity.hash.provider.bcrypt:org.wso2.carbon.identity.hash.provider.bcrypt >--
+[INFO] Building WSO2 Carbon - BCRYPT 0.1.8-SNAPSHOT                       [2/4]
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:tree (default-cli) @ org.wso2.carbon.identity.hash.provider.bcrypt ---
+[INFO] org.wso2.carbon.identity.hash.provider.bcrypt:org.wso2.carbon.identity.hash.provider.bcrypt:bundle:0.1.8-SNAPSHOT
+[INFO] +- org.apache.felix:org.apache.felix.scr.ds-annotations:jar:1.2.10:provided
+[INFO] +- org.wso2.carbon:org.wso2.carbon.user.core:jar:4.6.3-m4:compile
+[INFO] |  +- org.wso2.carbon:javax.cache.wso2:jar:4.6.3-m4:compile
+[INFO] |  |  +- org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1:compile
+[INFO] |  |  +- org.eclipse.platform:org.eclipse.osgi:jar:3.14.0:compile
+[INFO] |  |  \- org.wso2.carbon:org.wso2.carbon.base:jar:4.6.3-m4:compile
+[INFO] |  |     +- org.apache.ws.commons.axiom.wso2:axiom:jar:1.2.11-wso2v17:compile
+[INFO] |  |     |  +- org.apache.geronimo.specs.wso2:geronimo-stax-api_1.0_spec:jar:1.0.1.wso2v2:compile
+[INFO] |  |     |  +- org.codehaus.woodstox:woodstox-core-asl:jar:4.2.0:compile
+[INFO] |  |     |  \- org.codehaus.woodstox:stax2-api:jar:3.1.4:compile
+[INFO] |  |     +- org.wso2.carbon:org.wso2.carbon.securevault:jar:4.6.3-m4:compile
+[INFO] |  |     \- xml-apis:xml-apis:jar:1.4.01:compile
+[INFO] |  +- commons-lang.wso2:commons-lang:jar:2.6.0.wso2v1:compile
+[INFO] |  +- org.wso2.carbon:org.wso2.carbon.user.api:jar:4.6.3-m4:compile
+[INFO] |  +- xerces.wso2:xercesImpl:jar:2.8.1.wso2v2:compile
+[INFO] |  +- org.wso2.carbon:org.wso2.carbon.utils:jar:4.6.3-m4:compile
+[INFO] |  |  +- org.wso2.orbit.org.bouncycastle:bcprov-jdk15on:jar:1.60.0.wso2v1:compile
+[INFO] |  |  |  \- org.bouncycastle:bcprov-jdk15on:jar:1.60:compile
+[INFO] |  |  +- org.wso2.carbon:org.wso2.carbon.bootstrap:jar:4.6.3-m4:compile
+[INFO] |  |  |  \- wrapper:wrapper:jar:3.2.3:compile
+[INFO] |  |  +- org.ops4j.pax.logging:pax-logging-log4j2:jar:1.11.3:compile
+[INFO] |  |  +- org.wso2.carbon:org.wso2.carbon.queuing:jar:4.6.3-m4:compile
+[INFO] |  |  +- org.apache.axis2.wso2:axis2:jar:1.6.1-wso2v41:compile
+[INFO] |  |  +- org.igniterealtime.smack.wso2:smack:jar:3.0.4.wso2v1:compile
+[INFO] |  |  +- org.igniterealtime.smack.wso2:smackx:jar:3.0.4.wso2v1:compile
+[INFO] |  |  +- jaxen:jaxen:jar:1.1.1:compile
+[INFO] |  |  |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  |  |  +- jdom:jdom:jar:1.0:compile
+[INFO] |  |  |  +- xerces:xercesImpl:jar:2.6.2:compile
+[INFO] |  |  |  \- xom:xom:jar:1.0:compile
+[INFO] |  |  |     +- xerces:xmlParserAPIs:jar:2.6.2:compile
+[INFO] |  |  |     \- com.ibm.icu:icu4j:jar:2.6.1:compile
+[INFO] |  |  +- org.wso2.orbit.commons-fileupload:commons-fileupload:jar:1.3.3.wso2v1:compile
+[INFO] |  |  +- org.apache.ant.wso2:ant:jar:1.7.0.wso2v1:compile
+[INFO] |  |  |  \- org.apache.ant:ant:jar:1.7.0:compile
+[INFO] |  |  |     \- org.apache.ant:ant-launcher:jar:1.7.0:compile
+[INFO] |  |  +- org.eclipse.equinox:javax.servlet:jar:3.0.0.v201112011016:compile
+[INFO] |  |  +- org.wso2.orbit.commons-httpclient:commons-httpclient:jar:3.1.0.wso2v6:compile
+[INFO] |  |  \- org.wso2.carbon:org.wso2.carbon.registry.api:jar:4.6.3-m4:compile
+[INFO] |  +- commons-dbcp.wso2:commons-dbcp:jar:1.4.0.wso2v1:compile
+[INFO] |  +- org.wso2.orbit.org.apache.tomcat:jdbc-pool:jar:9.0.35.wso2v1:compile
+[INFO] |  +- org.wso2.securevault:org.wso2.securevault:jar:1.1.4:compile
+[INFO] |  |  +- org.apache.ws.commons.axiom:axiom-api:jar:1.2.11:compile
+[INFO] |  |  |  +- org.apache.geronimo.specs:geronimo-activation_1.1_spec:jar:1.0.2:compile
+[INFO] |  |  |  +- org.apache.geronimo.specs:geronimo-javamail_1.4_spec:jar:1.6:compile
+[INFO] |  |  |  \- org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:jar:1.0.1:compile
+[INFO] |  |  +- org.apache.ws.commons.axiom:axiom-impl:jar:1.2.11:compile
+[INFO] |  |  |  \- org.codehaus.woodstox:wstx-asl:jar:3.2.9:compile
+[INFO] |  |  +- jline:jline:jar:0.9.94:compile
+[INFO] |  |  |  \- junit:junit:jar:3.8.1:compile
+[INFO] |  |  +- commons-cli:commons-cli:jar:1.0:compile
+[INFO] |  |  |  \- commons-lang:commons-lang:jar:1.0:compile
+[INFO] |  |  +- commons-io:commons-io:jar:2.0:compile
+[INFO] |  |  \- commons-codec:commons-codec:jar:1.2:compile
+[INFO] |  +- org.wso2.orbit.commons-collections:commons-collections:jar:3.2.2.wso2v1:compile
+[INFO] |  +- com.google.code.gson:gson:jar:2.8.5:compile
+[INFO] |  +- org.osgi:org.osgi.service.component.annotations:jar:1.3.0:compile
+[INFO] |  +- org.osgi:org.osgi.annotation:jar:6.0.0:compile
+[INFO] |  +- org.osgi:org.osgi.service.metatype.annotations:jar:1.3.0:compile
+[INFO] |  \- org.wso2.carbon.crypto:org.wso2.carbon.crypto.api:jar:1.1.9:compile
+[INFO] |     \- org.wso2.eclipse.osgi:org.eclipse.osgi.services:jar:3.5.100.v20160504-1419:compile
+[INFO] +- org.eclipse.osgi:org.eclipse.osgi.services:jar:3.3.100.v20130513-1956:compile
+[INFO] +- org.eclipse.osgi:org.eclipse.osgi:jar:3.9.1.v20130814-1242:compile
+[INFO] +- org.ops4j.pax.logging:pax-logging-api:jar:1.11.0:compile
+[INFO] |  +- org.osgi:osgi.core:jar:6.0.0:compile
+[INFO] |  \- org.osgi:osgi.cmpn:jar:6.0.0:compile
+[INFO] +- commons-logging:commons-logging:jar:1.2:compile
+[INFO] +- org.testng:testng:jar:6.9.10:test
+[INFO] |  +- com.beust:jcommander:jar:1.48:test
+[INFO] |  \- org.beanshell:bsh:jar:2.0b4:test
+[INFO] +- org.jacoco:org.jacoco.agent:jar:runtime:0.8.2:test
+[INFO] +- org.powermock:powermock-module-testng:jar:1.7.4:test
+[INFO] |  +- org.powermock:powermock-core:jar:1.7.4:test
+[INFO] |  |  +- org.powermock:powermock-reflect:jar:1.7.4:test
+[INFO] |  |  \- org.javassist:javassist:jar:3.21.0-GA:test
+[INFO] |  \- org.powermock:powermock-module-testng-common:jar:1.7.4:test
+[INFO] \- org.powermock:powermock-api-mockito:jar:1.7.4:test
+[INFO]    +- org.powermock:powermock-api-mockito-common:jar:1.7.4:test
+[INFO]    |  \- org.powermock:powermock-api-support:jar:1.7.4:test
+[INFO]    \- org.mockito:mockito-core:jar:1.10.19:test
+[INFO]       +- org.hamcrest:hamcrest-core:jar:1.1:test
+[INFO]       \- org.objenesis:objenesis:jar:2.1:test
+[INFO] 
+[INFO] --< org.wso2.carbon.identity.hash.provider.bcrypt:org.wso2.carbon.identity.hash.provider.bcrypt.server.feature >--
+[INFO] Building WSO2 Carbon - BCRYPT Feature 0.1.8-SNAPSHOT               [3/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:tree (default-cli) @ org.wso2.carbon.identity.hash.provider.bcrypt.server.feature ---
+[INFO] org.wso2.carbon.identity.hash.provider.bcrypt:org.wso2.carbon.identity.hash.provider.bcrypt.server.feature:pom:0.1.8-SNAPSHOT
+[INFO] \- org.wso2.carbon.identity.hash.provider.bcrypt:org.wso2.carbon.identity.hash.provider.bcrypt:jar:0.1.8-SNAPSHOT:compile
+[INFO]    +- org.wso2.carbon:org.wso2.carbon.user.core:jar:4.6.3-m4:compile
+[INFO]    |  +- org.wso2.carbon:javax.cache.wso2:jar:4.6.3-m4:compile
+[INFO]    |  |  +- org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1:compile
+[INFO]    |  |  +- org.eclipse.platform:org.eclipse.osgi:jar:3.14.0:compile
+[INFO]    |  |  \- org.wso2.carbon:org.wso2.carbon.base:jar:4.6.3-m4:compile
+[INFO]    |  |     +- org.apache.ws.commons.axiom.wso2:axiom:jar:1.2.11-wso2v17:compile
+[INFO]    |  |     |  +- org.apache.geronimo.specs.wso2:geronimo-stax-api_1.0_spec:jar:1.0.1.wso2v2:compile
+[INFO]    |  |     |  +- org.codehaus.woodstox:woodstox-core-asl:jar:4.2.0:compile
+[INFO]    |  |     |  \- org.codehaus.woodstox:stax2-api:jar:3.1.4:compile
+[INFO]    |  |     +- org.wso2.carbon:org.wso2.carbon.securevault:jar:4.6.3-m4:compile
+[INFO]    |  |     \- xml-apis:xml-apis:jar:1.4.01:compile
+[INFO]    |  +- commons-lang.wso2:commons-lang:jar:2.6.0.wso2v1:compile
+[INFO]    |  +- org.wso2.carbon:org.wso2.carbon.user.api:jar:4.6.3-m4:compile
+[INFO]    |  +- xerces.wso2:xercesImpl:jar:2.8.1.wso2v2:compile
+[INFO]    |  +- org.wso2.carbon:org.wso2.carbon.utils:jar:4.6.3-m4:compile
+[INFO]    |  |  +- org.wso2.orbit.org.bouncycastle:bcprov-jdk15on:jar:1.60.0.wso2v1:compile
+[INFO]    |  |  |  \- org.bouncycastle:bcprov-jdk15on:jar:1.60:compile
+[INFO]    |  |  +- org.wso2.carbon:org.wso2.carbon.bootstrap:jar:4.6.3-m4:compile
+[INFO]    |  |  |  \- wrapper:wrapper:jar:3.2.3:compile
+[INFO]    |  |  +- org.ops4j.pax.logging:pax-logging-log4j2:jar:1.11.3:compile
+[INFO]    |  |  +- org.wso2.carbon:org.wso2.carbon.queuing:jar:4.6.3-m4:compile
+[INFO]    |  |  +- org.apache.axis2.wso2:axis2:jar:1.6.1-wso2v41:compile
+[INFO]    |  |  +- org.igniterealtime.smack.wso2:smack:jar:3.0.4.wso2v1:compile
+[INFO]    |  |  +- org.igniterealtime.smack.wso2:smackx:jar:3.0.4.wso2v1:compile
+[INFO]    |  |  +- jaxen:jaxen:jar:1.1.1:compile
+[INFO]    |  |  |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO]    |  |  |  +- jdom:jdom:jar:1.0:compile
+[INFO]    |  |  |  +- xerces:xercesImpl:jar:2.6.2:compile
+[INFO]    |  |  |  \- xom:xom:jar:1.0:compile
+[INFO]    |  |  |     +- xerces:xmlParserAPIs:jar:2.6.2:compile
+[INFO]    |  |  |     \- com.ibm.icu:icu4j:jar:2.6.1:compile
+[INFO]    |  |  +- org.wso2.orbit.commons-fileupload:commons-fileupload:jar:1.3.3.wso2v1:compile
+[INFO]    |  |  +- org.apache.ant.wso2:ant:jar:1.7.0.wso2v1:compile
+[INFO]    |  |  |  \- org.apache.ant:ant:jar:1.7.0:compile
+[INFO]    |  |  |     \- org.apache.ant:ant-launcher:jar:1.7.0:compile
+[INFO]    |  |  +- org.eclipse.equinox:javax.servlet:jar:3.0.0.v201112011016:compile
+[INFO]    |  |  +- org.wso2.orbit.commons-httpclient:commons-httpclient:jar:3.1.0.wso2v6:compile
+[INFO]    |  |  \- org.wso2.carbon:org.wso2.carbon.registry.api:jar:4.6.3-m4:compile
+[INFO]    |  +- commons-dbcp.wso2:commons-dbcp:jar:1.4.0.wso2v1:compile
+[INFO]    |  +- org.wso2.orbit.org.apache.tomcat:jdbc-pool:jar:9.0.35.wso2v1:compile
+[INFO]    |  +- org.wso2.securevault:org.wso2.securevault:jar:1.1.4:compile
+[INFO]    |  |  +- org.apache.ws.commons.axiom:axiom-api:jar:1.2.11:compile
+[INFO]    |  |  |  +- org.apache.geronimo.specs:geronimo-activation_1.1_spec:jar:1.0.2:compile
+[INFO]    |  |  |  +- org.apache.geronimo.specs:geronimo-javamail_1.4_spec:jar:1.6:compile
+[INFO]    |  |  |  \- org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:jar:1.0.1:compile
+[INFO]    |  |  +- org.apache.ws.commons.axiom:axiom-impl:jar:1.2.11:compile
+[INFO]    |  |  |  \- org.codehaus.woodstox:wstx-asl:jar:3.2.9:compile
+[INFO]    |  |  +- jline:jline:jar:0.9.94:compile
+[INFO]    |  |  |  \- junit:junit:jar:3.8.1:compile
+[INFO]    |  |  +- commons-cli:commons-cli:jar:1.0:compile
+[INFO]    |  |  |  \- commons-lang:commons-lang:jar:1.0:compile
+[INFO]    |  |  +- commons-io:commons-io:jar:2.0:compile
+[INFO]    |  |  \- commons-codec:commons-codec:jar:1.2:compile
+[INFO]    |  +- org.wso2.orbit.commons-collections:commons-collections:jar:3.2.2.wso2v1:compile
+[INFO]    |  +- com.google.code.gson:gson:jar:2.8.5:compile
+[INFO]    |  +- org.osgi:org.osgi.service.component.annotations:jar:1.3.0:compile
+[INFO]    |  +- org.osgi:org.osgi.annotation:jar:6.0.0:compile
+[INFO]    |  +- org.osgi:org.osgi.service.metatype.annotations:jar:1.3.0:compile
+[INFO]    |  \- org.wso2.carbon.crypto:org.wso2.carbon.crypto.api:jar:1.1.9:compile
+[INFO]    |     \- org.wso2.eclipse.osgi:org.eclipse.osgi.services:jar:3.5.100.v20160504-1419:compile
+[INFO]    +- org.eclipse.osgi:org.eclipse.osgi.services:jar:3.3.100.v20130513-1956:compile
+[INFO]    +- org.eclipse.osgi:org.eclipse.osgi:jar:3.9.1.v20130814-1242:compile
+[INFO]    +- org.ops4j.pax.logging:pax-logging-api:jar:1.11.0:compile
+[INFO]    |  +- org.osgi:osgi.core:jar:6.0.0:compile
+[INFO]    |  \- org.osgi:osgi.cmpn:jar:6.0.0:compile
+[INFO]    \- commons-logging:commons-logging:jar:1.2:compile
+[INFO] 
+[INFO] --< org.wso2.carbon.identity.hash.provider.bcrypt:bcrypt-hash-generator >--
+[INFO] Building bcrypt-hash-generator 0.1.8-SNAPSHOT                      [4/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:tree (default-cli) @ bcrypt-hash-generator ---
+[INFO] org.wso2.carbon.identity.hash.provider.bcrypt:bcrypt-hash-generator:jar:0.1.8-SNAPSHOT
+[INFO] \- org.wso2.carbon.identity.hash.provider.bcrypt:org.wso2.carbon.identity.hash.provider.bcrypt:jar:0.1.8-SNAPSHOT:compile
+[INFO]    +- org.wso2.carbon:org.wso2.carbon.user.core:jar:4.6.3-m4:compile
+[INFO]    |  +- org.wso2.carbon:javax.cache.wso2:jar:4.6.3-m4:compile
+[INFO]    |  |  +- org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1:compile
+[INFO]    |  |  +- org.eclipse.platform:org.eclipse.osgi:jar:3.14.0:compile
+[INFO]    |  |  \- org.wso2.carbon:org.wso2.carbon.base:jar:4.6.3-m4:compile
+[INFO]    |  |     +- org.apache.ws.commons.axiom.wso2:axiom:jar:1.2.11-wso2v17:compile
+[INFO]    |  |     |  +- org.apache.geronimo.specs.wso2:geronimo-stax-api_1.0_spec:jar:1.0.1.wso2v2:compile
+[INFO]    |  |     |  +- org.codehaus.woodstox:woodstox-core-asl:jar:4.2.0:compile
+[INFO]    |  |     |  \- org.codehaus.woodstox:stax2-api:jar:3.1.4:compile
+[INFO]    |  |     +- org.wso2.carbon:org.wso2.carbon.securevault:jar:4.6.3-m4:compile
+[INFO]    |  |     \- xml-apis:xml-apis:jar:1.4.01:compile
+[INFO]    |  +- commons-lang.wso2:commons-lang:jar:2.6.0.wso2v1:compile
+[INFO]    |  +- org.wso2.carbon:org.wso2.carbon.user.api:jar:4.6.3-m4:compile
+[INFO]    |  +- xerces.wso2:xercesImpl:jar:2.8.1.wso2v2:compile
+[INFO]    |  +- org.wso2.carbon:org.wso2.carbon.utils:jar:4.6.3-m4:compile
+[INFO]    |  |  +- org.wso2.orbit.org.bouncycastle:bcprov-jdk15on:jar:1.60.0.wso2v1:compile
+[INFO]    |  |  |  \- org.bouncycastle:bcprov-jdk15on:jar:1.60:compile
+[INFO]    |  |  +- org.wso2.carbon:org.wso2.carbon.bootstrap:jar:4.6.3-m4:compile
+[INFO]    |  |  |  \- wrapper:wrapper:jar:3.2.3:compile
+[INFO]    |  |  +- org.ops4j.pax.logging:pax-logging-log4j2:jar:1.11.3:compile
+[INFO]    |  |  +- org.wso2.carbon:org.wso2.carbon.queuing:jar:4.6.3-m4:compile
+[INFO]    |  |  +- org.apache.axis2.wso2:axis2:jar:1.6.1-wso2v41:compile
+[INFO]    |  |  +- org.igniterealtime.smack.wso2:smack:jar:3.0.4.wso2v1:compile
+[INFO]    |  |  +- org.igniterealtime.smack.wso2:smackx:jar:3.0.4.wso2v1:compile
+[INFO]    |  |  +- jaxen:jaxen:jar:1.1.1:compile
+[INFO]    |  |  |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO]    |  |  |  +- jdom:jdom:jar:1.0:compile
+[INFO]    |  |  |  +- xerces:xercesImpl:jar:2.6.2:compile
+[INFO]    |  |  |  \- xom:xom:jar:1.0:compile
+[INFO]    |  |  |     +- xerces:xmlParserAPIs:jar:2.6.2:compile
+[INFO]    |  |  |     \- com.ibm.icu:icu4j:jar:2.6.1:compile
+[INFO]    |  |  +- org.wso2.orbit.commons-fileupload:commons-fileupload:jar:1.3.3.wso2v1:compile
+[INFO]    |  |  +- org.apache.ant.wso2:ant:jar:1.7.0.wso2v1:compile
+[INFO]    |  |  |  \- org.apache.ant:ant:jar:1.7.0:compile
+[INFO]    |  |  |     \- org.apache.ant:ant-launcher:jar:1.7.0:compile
+[INFO]    |  |  +- org.eclipse.equinox:javax.servlet:jar:3.0.0.v201112011016:compile
+[INFO]    |  |  +- org.wso2.orbit.commons-httpclient:commons-httpclient:jar:3.1.0.wso2v6:compile
+[INFO]    |  |  \- org.wso2.carbon:org.wso2.carbon.registry.api:jar:4.6.3-m4:compile
+[INFO]    |  +- commons-dbcp.wso2:commons-dbcp:jar:1.4.0.wso2v1:compile
+[INFO]    |  +- org.wso2.orbit.org.apache.tomcat:jdbc-pool:jar:9.0.35.wso2v1:compile
+[INFO]    |  +- org.wso2.securevault:org.wso2.securevault:jar:1.1.4:compile
+[INFO]    |  |  +- org.apache.ws.commons.axiom:axiom-api:jar:1.2.11:compile
+[INFO]    |  |  |  +- org.apache.geronimo.specs:geronimo-activation_1.1_spec:jar:1.0.2:compile
+[INFO]    |  |  |  +- org.apache.geronimo.specs:geronimo-javamail_1.4_spec:jar:1.6:compile
+[INFO]    |  |  |  \- org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:jar:1.0.1:compile
+[INFO]    |  |  +- org.apache.ws.commons.axiom:axiom-impl:jar:1.2.11:compile
+[INFO]    |  |  |  \- org.codehaus.woodstox:wstx-asl:jar:3.2.9:compile
+[INFO]    |  |  +- jline:jline:jar:0.9.94:compile
+[INFO]    |  |  |  \- junit:junit:jar:3.8.1:compile
+[INFO]    |  |  +- commons-cli:commons-cli:jar:1.0:compile
+[INFO]    |  |  |  \- commons-lang:commons-lang:jar:1.0:compile
+[INFO]    |  |  +- commons-io:commons-io:jar:2.0:compile
+[INFO]    |  |  \- commons-codec:commons-codec:jar:1.2:compile
+[INFO]    |  +- org.wso2.orbit.commons-collections:commons-collections:jar:3.2.2.wso2v1:compile
+[INFO]    |  +- com.google.code.gson:gson:jar:2.8.5:compile
+[INFO]    |  +- org.osgi:org.osgi.service.component.annotations:jar:1.3.0:compile
+[INFO]    |  +- org.osgi:org.osgi.annotation:jar:6.0.0:compile
+[INFO]    |  +- org.osgi:org.osgi.service.metatype.annotations:jar:1.3.0:compile
+[INFO]    |  \- org.wso2.carbon.crypto:org.wso2.carbon.crypto.api:jar:1.1.9:compile
+[INFO]    |     \- org.wso2.eclipse.osgi:org.eclipse.osgi.services:jar:3.5.100.v20160504-1419:compile
+[INFO]    +- org.eclipse.osgi:org.eclipse.osgi.services:jar:3.3.100.v20130513-1956:compile
+[INFO]    +- org.eclipse.osgi:org.eclipse.osgi:jar:3.9.1.v20130814-1242:compile
+[INFO]    +- org.ops4j.pax.logging:pax-logging-api:jar:1.11.0:compile
+[INFO]    |  +- org.osgi:osgi.core:jar:6.0.0:compile
+[INFO]    |  \- org.osgi:osgi.cmpn:jar:6.0.0:compile
+[INFO]    \- commons-logging:commons-logging:jar:1.2:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for WSO2 Carbon BCRYPT module 0.1.8-SNAPSHOT:
+[INFO] 
+[INFO] WSO2 Carbon BCRYPT module .......................... SUCCESS [  0.483 s]
+[INFO] WSO2 Carbon - BCRYPT ............................... SUCCESS [  0.371 s]
+[INFO] WSO2 Carbon - BCRYPT Feature ....................... SUCCESS [  0.056 s]
+[INFO] bcrypt-hash-generator .............................. SUCCESS [  0.051 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.672 s
+[INFO] Finished at: 2024-10-19T09:53:42+02:00
+[INFO] ------------------------------------------------------------------------

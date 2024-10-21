@@ -19,23 +19,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>org.wso2.carbon.identity.hash.provider.pbkdf2</groupId>
-        <artifactId>identity-hash-provider-pbkdf2</artifactId>
+        <groupId>org.wso2.carbon.identity.hash.provider.bcrypt</groupId>
+        <artifactId>identity-hash-provider-bcrypt</artifactId>
         <version>0.1.8-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>org.wso2.carbon.identity.hash.provider.pbkdf2.server.feature</artifactId>
+    <artifactId>org.wso2.carbon.identity.hash.provider.bcrypt.server.feature</artifactId>
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
-    <name>WSO2 Carbon - PBKDF2 Feature</name>
+    <name>WSO2 Carbon - BCRYPT Feature</name>
     <url>http://wso2.org</url>
-    <description>This feature contains the core bundles required for PBKDF2</description>
+    <description>This feature contains the core bundles required for BCRYPT</description>
 
     <dependencies>
         <dependency>
-            <groupId>org.wso2.carbon.identity.hash.provider.pbkdf2</groupId>
-            <artifactId>org.wso2.carbon.identity.hash.provider.pbkdf2</artifactId>
+            <groupId>org.wso2.carbon.identity.hash.provider.bcrypt</groupId>
+            <artifactId>org.wso2.carbon.identity.hash.provider.bcrypt</artifactId>
         </dependency>
     </dependencies>
 
@@ -53,7 +53,7 @@
                             <goal>p2-feature-gen</goal>
                         </goals>
                         <configuration>
-                            <id>org.wso2.carbon.identity.hash.provider.pbkdf2.server</id>
+                            <id>org.wso2.carbon.identity.hash.provider.bcrypt.server</id>
                             <propertiesFile>../etc/feature.properties</propertiesFile>
                             <adviceFile>
                                 <properties>
@@ -61,7 +61,7 @@
                                 </properties>
                             </adviceFile>
                             <bundles>
-                                <bundleDef>org.wso2.carbon.identity.hash.provider.pbkdf2:org.wso2.carbon.identity.hash.provider.pbkdf2</bundleDef>
+                                <bundleDef>org.wso2.carbon.identity.hash.provider.bcrypt:org.wso2.carbon.identity.hash.provider.bcrypt</bundleDef>
                             </bundles>
                             <importFeatures>
                                 <importFeatureDef>org.wso2.carbon.core:compatible:${carbon.kernel.feature.version}</importFeatureDef>
